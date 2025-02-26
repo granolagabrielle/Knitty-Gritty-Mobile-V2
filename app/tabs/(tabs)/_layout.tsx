@@ -19,22 +19,30 @@ export default function TabLayout() {
       <Tabs.Screen
         name='index'
         options={{
-          title: 'Yarn Shelf',
+          title: 'Home',
           tabBarIcon: ({ color }) => <TabBarIcon name='home' color={color} />,
         }}
       />
 
       <Tabs.Screen
-        name='tab1'
+        name='yarn'
         options={{
-          title: 'Pattern Library',
+          title: 'Yarns',
+          tabBarIcon: ({ color }) => <TabBarIcon name='star-o' color={color} />,
+        }}
+      />
+
+      <Tabs.Screen
+        name='patterns'
+        options={{
+          title: 'Patterns',
           tabBarIcon: ({ color }) => <TabBarIcon name='star-o' color={color} />,
         }}
       />
       <Tabs.Screen
-        name='tab2'
+        name='projects'
         options={{
-          title: 'Project Tracking',
+          title: 'Projects',
           tabBarIcon: ({ color }) => <TabBarIcon name='star-o' color={color} />,
         }}
       />
